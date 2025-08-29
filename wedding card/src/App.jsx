@@ -28,7 +28,7 @@ export default function App() {
         In the name of Allah the most Gracious the most Merciful
       </p>
 
-      <h1 className="text-4xl md:text-6xl font-bold mb-8">Mubeen & Sameem</h1>
+      <h1 className="text-4xl md:text-6xl font-bold mb-8">adnan & Aaliya</h1>
 
       <div className="flex gap-6 text-center mb-10">
         <TimeBox label="DAYS" value={timeLeft.days} />
@@ -45,7 +45,11 @@ export default function App() {
           📩 View Invitation
         </a>
         <a
-          href="#location"
+          href="https://www.google.com/maps/place/Ismail+Enterprises,+5%2F1213,+Mohammed+Abdul+Rahman+Rd,+Mattancherry,
+          +Kochi,+Kerala+682002/data=!4m2!3m1!1s0x3b086dc20d4353e9:0x9665693c675fc19e?entry=gps&coh=192189&g_ep=CAESBzI1L
+          jMzLjMYACCenQoqmQEsOTQyNzgzMDcsOTQyNjc3MjcsOTQyODQ0ODcsOTQyMjMyOTksOTQyMTY0MTMsOTQyODA1NzYsOTQyMTI0OTYsOTQyMDczOTQ
+          sOTQyMDc1MDYsOTQyMDg1MDYsOTQyMTc1MjMsOTQyMTg2NTMsOTQyMjk4MzksOTQyNzUxNjgsNDcwODQzOTMsOTQyMTMyMDAsOTQyNTgzMjVCAklO&s
+          kid=b3b9940f-3dc9-4f35-8251-a79cb652eb3e&g_st=ac"
           className="px-4 py-3 rounded-2xl border border-gray-500 hover:bg-gray-800 transition flex items-center justify-center"
         >
           📍 View Location
@@ -55,10 +59,12 @@ export default function App() {
   );
 }
 
-function TimeBox({ label, value }: { label: string; value: number }) {
+function TimeBox({ label, value }) {
   return (
     <div>
-      <div className="text-3xl md:text-4xl font-bold">{String(value).padStart(2, "0")}</div>
+      <div className="text-3xl md:text-4xl font-bold">
+        {String(value).padStart(2, "0")}
+      </div>
       <div className="text-xs text-gray-400 mt-1">{label}</div>
     </div>
   );
