@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 export default function App() {
-  const targetDate = new Date("2025-09-05T18:00:00"); // set your event date & time
+  const targetDate = new Date("2025-09-22T18:00:00");
   const [timeLeft, setTimeLeft] = useState(getTimeLeft());
 
   function getTimeLeft() {
@@ -12,6 +12,10 @@ export default function App() {
       minutes: Math.max(0, Math.floor((diff / 1000 / 60) % 60)),
       seconds: Math.max(0, Math.floor((diff / 1000) % 60)),
     };
+  }
+
+  const notnow = () => {
+    alert("not now")
   }
 
   useEffect(() => {
@@ -38,12 +42,11 @@ export default function App() {
       </div>
 
       <div className="flex flex-col gap-4 w-full max-w-xs">
-        <a
-          href="#invitation"
-          className="px-4 py-3 rounded-2xl bg-gray-700 hover:bg-gray-600 transition flex items-center justify-center"
-        >
+
+        <div onClick={notnow} className="px-4 py-3 rounded-2xl bg-gray-700 hover:bg-gray-600 transition flex items-center justify-center">
+
           📩 View Invitation
-        </a>
+        </div>
         <a
           href="https://www.google.com/maps/place/Ismail+Enterprises,+5%2F1213,+Mohammed+Abdul+Rahman+Rd,+Mattancherry,
           +Kochi,+Kerala+682002/data=!4m2!3m1!1s0x3b086dc20d4353e9:0x9665693c675fc19e?entry=gps&coh=192189&g_ep=CAESBzI1L
