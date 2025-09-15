@@ -32,7 +32,7 @@ export default function App() {
         In the name of Allah the most Gracious the most Merciful
       </p>
 
-      <h1 className="text-4xl md:text-6xl font-bold mb-8">adnan & Aaliya</h1>
+      <h1 className="text-4xl md:text-6xl font-bold mb-8">adnan & adnan</h1>
 
       <div className="flex gap-6 text-center mb-10">
         <TimeBox label="DAYS" value={timeLeft.days} />
