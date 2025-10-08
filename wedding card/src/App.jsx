@@ -63,12 +63,12 @@ export default function App() {
 }
 
 function TimeBox({ label, value }) {
-//   return (
-//     <div>
-//       <div className="text-3xl md:text-4xl font-bold">
-//         {String(value).padStart(2, "0")}
-//       </div>
-//       <div className="text-xs text-gray-400 mt-1">{label}</div>
-//     </div>
-//   );
-// }
+  return (
+    <div>
+      <div className="text-3xl md:text-4xl font-bold">
+        {String(value).padStart(2, "0")}
+      </div>
+      <div className="text-xs text-gray-400 mt-1">{label}</div>
+    </div>
+  );
+}
