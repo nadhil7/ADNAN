@@ -62,7 +62,7 @@ export default function App() {
   );
 }
 
-function TimeBox({ label, value }) {
+// function TimeBox({ label, value }) {
 //   return (
 //     <div>
 //       <div className="text-3xl md:text-4xl font-bold">
